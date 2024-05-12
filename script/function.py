@@ -2,7 +2,7 @@ from discord_webhook import DiscordWebhook, DiscordEmbed
 import json
 
 
-# Cette classe permet de gérer le LocalStorage d'une page Internet, donc de récupérer les informations, voire même de les retirer ou d'en ajouter.
+# Cette classe permet de gérer le LocalStorage d'une page Internet, donc de récupérer les informations, voire même de les retirer ou d'en ajouter
 class LocalStorage:
 
     def __init__(self, driver) :
