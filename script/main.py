@@ -11,7 +11,7 @@ import undetected_chromedriver as uc
 chrome_options = uc.ChromeOptions()
 
 
-
+#init driver
 driver = uc.Chrome(options=chrome_options)
 driver.get("https://neal.fun/infinite-craft/")
 driver.maximize_window()
