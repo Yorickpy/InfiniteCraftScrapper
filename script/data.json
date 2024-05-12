@@ -1,0 +1,27 @@
+{
+    "element_data": {
+        "elements": [
+            {
+                "text": "Water",
+                "emoji": "💧",
+                "discovered": false
+            },
+            {
+                "text": "Fire",
+                "emoji": "🔥",
+                "discovered": false
+            },
+            {
+                "text": "Wind",
+                "emoji": "🌬️",
+                "discovered": false
+            },
+            {
+                "text": "Earth",
+                "emoji": "🌍",
+                "discovered": false
+            }
+        ],
+        "darkMode": false
+    }
+}
