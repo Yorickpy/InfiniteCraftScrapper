@@ -7,22 +7,12 @@ from itertools import combinations
 from function import simple_log_embed, element_found_log_embed, element_never_founded_log_embed, error_log_embed, sauvegarder_recettes, get_element_emoji, get_element_discovered
 from discord_webhook import DiscordWebhook
 import undetected_chromedriver as uc
-import threading
 
-chrome_options = Options()
-chrome_options.add_experimental_option("detach", True)
-driver = uc.Chrome(headless=False)
+chrome_options = uc.ChromeOptions()
 
 
-def boucle_interne():
-    while True:
-        time.sleep(5) # 3600 secondes = 1 heure
-        print("Boucle interne en cours...")
 
-
-thread_boucle = threading.Thread(target=boucle_interne)
-thread_boucle.start()
-
+driver = uc.Chrome(options=chrome_options)
 driver.get("https://neal.fun/infinite-craft/")
 driver.maximize_window()
 time.sleep(5)
