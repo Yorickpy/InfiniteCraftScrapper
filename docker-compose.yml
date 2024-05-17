@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  chrome:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./script:/script
+    shm_size: '2g'

@@ -20,7 +20,7 @@ element = driver.find_element(By.XPATH, "/html/body/div[2]/div[2]/div[1]/div[2]/
 element.click()
 
 
-input("Press enter to start auto crafting")
+# input("Press enter to start auto crafting")
 
 
 def check_if_element_already_get(general_data, request_data):
