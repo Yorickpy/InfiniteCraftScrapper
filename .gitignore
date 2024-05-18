@@ -1,3 +1,5 @@
 script/webhook_data.json
 script/data.json
 script/combinaisons.json
+script/__pycache__/function.cpython-310.pyc
+env/
