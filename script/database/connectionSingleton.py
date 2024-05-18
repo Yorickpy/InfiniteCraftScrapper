@@ -8,7 +8,7 @@ class DatabaseConnection:
             cls._instance = super().__new__(cls)
             # Informations de connexion
             hostname = '93.127.202.168'
-            database = 'infinitcraft'
+            database = 'infinitcrafttest'
             username = 'infinitcraft'
             password = 'LucasYorick'
             port = 5432

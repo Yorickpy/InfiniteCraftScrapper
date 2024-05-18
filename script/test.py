@@ -1,15 +1,18 @@
 import datetime
 from database.db_functions import DbTools
 from database.Craft import Craft
-craft = Craft(created_at=datetime.date.today(), emoji="😀", discovered=False, id=1, libelle="content")
 
-arr = DbTools.get_craft_many()
+def main():
+    all = DbTools.get_craft_all()
 
-for element in arr :
-    print(element)
+    recipe1 = all[500]
+    recipe2 = all[600]
+    parent = all[700]
 
-print("test 2")
-arr2 = DbTools.get_craft("Water")
+    print(recipe1)
+    print(recipe2)
+    print(parent)
+    DbTools.create_recette(parent=parent, recipe1=recipe1, recipe2=recipe2)
 
-for element2 in arr2 :
-    print(element2)
+
+main()
